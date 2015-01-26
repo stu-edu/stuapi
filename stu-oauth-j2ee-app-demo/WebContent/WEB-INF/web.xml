@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2012 SURFnet bv, The Netherlands Licensed under the Apache 
+	License, Version 2.0 (the "License"); you may not use this file except in 
+	compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+    <filter>
+        <filter-name>accessTokenFilter</filter-name>
+        <filter-class>edu.stu.oauth.demoapp.TokenFilter</filter-class>
+        <init-param>
+			<param-name>appKey</param-name>
+			<param-value>local-demo-app</param-value>
+		</init-param>
+		<init-param>
+			<param-name>appSecret</param-name>
+			<!--loc 1402ad4f-5b38-499a-970f-f032f832125a -->
+			<!--oauthtest  ca2c4cc6-d3c8-45cc-93a5-2314a55d5795-->
+			<param-value>ca2c4cc6-d3c8-45cc-93a5-2314a55d5795</param-value>
+		</init-param>
+		<init-param>
+			<param-name>accessTokenEndPoint</param-name>
+			<param-value>https://oauthtest.stu.edu.cn/oauth2/token</param-value>
+		</init-param>
+		<init-param>
+			<param-name>authorizationURL</param-name>
+			<param-value>https://oauthtest.stu.edu.cn/oauth2/authorize</param-value>
+		</init-param>
+		<init-param>
+			<param-name>redirectUri</param-name>
+			<param-value>http://demo.stu.edu.cn:8280/redirect</param-value>
+		</init-param>
+
+    </filter>
+     <filter-mapping>
+        <filter-name>accessTokenFilter</filter-name>
+        <url-pattern>/redirect</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>accessTokenFilter</filter-name>
+        <url-pattern>/test/*</url-pattern>
+    </filter-mapping>
+	<servlet>
+		<servlet-name>profile</servlet-name>
+		<servlet-class>edu.stu.oauth.demoapp.ProfileServlet</servlet-class>
+		
+		<init-param>
+			<param-name>resourceServer</param-name>
+			<param-value>https://apitest.stu.edu.cn</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/test/courses</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/test/course/members</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/test/course/activities</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/test/profile/view</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/test/chengjibiao</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/test/kechengbiao</url-pattern>
+	</servlet-mapping>
+	<session-config>
+	    <session-timeout>800000</session-timeout>
+	</session-config>
+</web-app>
