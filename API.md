@@ -10,7 +10,6 @@ STU API
 * 参数：无
 * 返回值：
 ```
-<pre>
 {
 	"id": "用户id",
 	"username": "用户名",
@@ -23,5 +22,4 @@ STU API
 	"studentId": "学号" //学生才有此字段
 	“teacherId”:”教师编号” //教师才有此字段
 }
-</pre>
 ```
