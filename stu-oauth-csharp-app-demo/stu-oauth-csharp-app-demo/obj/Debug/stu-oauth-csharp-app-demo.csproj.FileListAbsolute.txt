@@ -1,0 +1,6 @@
+F:\website\stu-oauth-csharp-app-demo\stu-oauth-csharp-app-demo\bin\stu-oauth-csharp-app-demo.dll
+F:\website\stu-oauth-csharp-app-demo\stu-oauth-csharp-app-demo\bin\stu-oauth-csharp-app-demo.pdb
+F:\website\stu-oauth-csharp-app-demo\stu-oauth-csharp-app-demo\bin\Newtonsoft.Json.dll
+F:\website\stu-oauth-csharp-app-demo\stu-oauth-csharp-app-demo\obj\Debug\ResolveAssemblyReference.cache
+F:\website\stu-oauth-csharp-app-demo\stu-oauth-csharp-app-demo\obj\Debug\stu-oauth-csharp-app-demo.dll
+F:\website\stu-oauth-csharp-app-demo\stu-oauth-csharp-app-demo\obj\Debug\stu-oauth-csharp-app-demo.pdb
