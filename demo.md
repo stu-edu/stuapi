@@ -3,7 +3,7 @@
 
 ### 取学生成绩信息	
 * 方法 GetStudentCJB
-* URL http://StuWebService.stu.edu.cn/wxjf.asmx
+* URL `http://StuWebService.stu.edu.cn/wxjf.asmx`
 * 参数
 
 ```
