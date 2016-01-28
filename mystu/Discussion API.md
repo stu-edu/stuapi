@@ -142,6 +142,7 @@ MYSTU Discussion API
 * URL:/v3/services/api/post/byCourseGroupId/{0}/{1}?pageSize=5
 * Method: GET
 * 参数：
+
 ```
       url 路径参数  
       0：课程id  String  
@@ -205,6 +206,7 @@ MYSTU Discussion API
       0：课程分组id(String)
    ```
 * 返回：
+   
    ```
       {fields:"id,
                user,
@@ -255,6 +257,7 @@ MYSTU Discussion API
        }
    ```
 * 提交数据说明：
+   
    ```  
       content:讨论类容，
       courseGroupId：课程分组id，
@@ -263,6 +266,7 @@ MYSTU Discussion API
       fileIds：上传图片或文件返回id
    ```
 * 错误代码：
+  
   ```
       {status_code: 400, error_msg: "你被禁言了" }，  
       {status_code: 400, error_msg: "Content is null" }
@@ -279,6 +283,7 @@ MYSTU Discussion API
    ```
 
 * 错误代码：
+   
    ```
     {status_code: 403, error_msg: "你没有权限删除该条数据!"}
   ```
@@ -300,11 +305,13 @@ MYSTU Discussion API
 
    ```
 * 提交数据说明：
+
 ``` 
       groupId：课程分组id，
       psotId：讨论id
 ``` 
 * 错误代码：
+  
    ```
       {status_code: 404, error_msg: "post is invisible"} ，  
       {status_code: 400, error_msg: "你被禁言了" }
@@ -315,11 +322,13 @@ MYSTU Discussion API
 * URL:/v3/services/api/comment/{0}
 * Method:DELETE
 * 参数：
+   
    ```
       0：讨论回复id(String)
    ```
 
 * 错误代码：
+   
    ```
       {status_code: 403, error_msg: "你没有权限删除该条数据!"}
    ```
@@ -411,6 +420,7 @@ MYSTU Discussion API
    }
      ```
 * 返回数据说明：
+  
    ```
     isAdmin：是否是管理员
    ```
@@ -445,6 +455,7 @@ MYSTU Discussion API
       
    ```
 * 返回数据说明：
+   
    ```
       isAdmin：是否是管理员
    ```
@@ -643,11 +654,13 @@ MYSTU Discussion API
    }
     ```
 * 提交数据说明：
+  
    ``` 
     tagType:热门标签,
     fileIds:讨论提交的文件
    ```
 * 错误代码：
+   
    ```
     {status_code: 400, error_msg: "你被禁言了" }，
     {status_code: 400, error_msg: "Content is null" }
@@ -721,6 +734,7 @@ MYSTU Discussion API
         pageSize 每次查询返回数   
     ```
 * 返回：
+   
     ``` 
       {fields:"id,
                version,
@@ -834,6 +848,7 @@ MYSTU Discussion API
 * URL:/v3/services/api/post/byEventGroupId/{0}?pageSize=5
 * Method:GET
 * 参数：
+
 ```                       
      url 路径参数
      0：团体id  String       
@@ -842,6 +857,7 @@ MYSTU Discussion API
     ```
     
 * 返回：
+
 ``` 
       {fields:"id,
                version,
