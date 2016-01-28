@@ -136,6 +136,7 @@ MYSTU Profile API
    ```
      
 * 返回数据说明：
+   
    ```   
     profileInfo：主要包含个人资质，如：教育经历、获奖,
     tuser：主要包含个人的信息，如：电话，邮件，生日，姓名，等内容
@@ -242,6 +243,7 @@ MYSTU Profile API
    ```
       
 * 提交数据说明：
+   
    ```
     个人资料保存的每个字段都由open:是否公开，val:具体数据，组合的map。
     gender:性别(f,m),nativePlace：籍贯，birthday：生日，
@@ -315,6 +317,7 @@ MYSTU Profile API
     0：登录人的id
    ```
 * 返回:
+   
    ```
       {
     open: true,
@@ -461,6 +464,7 @@ MYSTU Profile API
     pageSize 每次查询返回数   
     ```
 * 返回：
+    
     ```
       {"additionalData":{},field:"{"additionalData":{},
       field:"id,
@@ -506,6 +510,7 @@ MYSTU Profile API
       } 
     ```
 * 返回数据说明：
+    
     ```
     fields与items的每一条数据的数组对应，如：id="00E54ED0AF5F11E5906186574088FD86", 
     pageNo:当前页，pageSize:数据返回条数，startIndex:分页开始数，
@@ -522,6 +527,7 @@ MYSTU Profile API
     pageSize 每次查询返回数   
     ```
 * 返回：
+    
     ``` 
       {"additionalData":{},field:"{"additionalData":{},
       field:"id,
@@ -577,6 +583,7 @@ MYSTU Profile API
     pageSize 每次查询返回数   
     ```
 * 返回：
+   
     ```
        {"additionalData":{},field:"{"additionalData":{},
       field:"id,
@@ -643,6 +650,7 @@ MYSTU Profile API
     groupId：课程分组id，psotId：讨论id
    ```
 * 错误代码：
+  
   ```
     {status_code: 404, error_msg: "post is invisible"} ，
     {status_code: 400, error_msg: "你被禁言了" }
@@ -659,6 +667,7 @@ MYSTU Profile API
     pageSize 数据返回条数
    ```
 * 返回：
+   
    ``` 
       {fields:"id,
                name,
@@ -718,6 +727,7 @@ MYSTU Profile API
     pageSize 数据返回条数
    ```
 * 返回：
+  
    ```
       {fields:"id,
                name,
@@ -775,6 +785,7 @@ MYSTU Profile API
     0:登陆人的id
     ```
 * 提交数据结构：
+   
    ```
     {achievements: {open: true},
       biography: {open: true},
@@ -819,6 +830,7 @@ MYSTU Profile API
     {email: "s_stu1@uat.stu.edu.cn "} 
       ```
 * 错误代码：
+   
     ```
     {status_code: 400, error_msg: "email is null" }，
     {status_code: 400, error_msg: "UserCheckEmail is null" }
@@ -841,6 +853,7 @@ MYSTU Profile API
   ```
       
 * 错误代码： 
+  
   ``` 
     旧密码不对{"success":false,"errorCode":1}
   ```
@@ -893,6 +906,7 @@ MYSTU Profile API
   ```
      
 * 返回数据说明：
+  
   ```
     categories:科目，gpa：综合gpa，
     credits：总学分，semesters：学期
@@ -1051,6 +1065,7 @@ MYSTU Profile API
     ```
      
 * 返回：
+    
     ```  
       {"additionalData":{},field:"{"additionalData":{},
       field:"id,
@@ -1095,6 +1110,7 @@ MYSTU Profile API
       }
  ```   
 * 返回数据说明：
+    
     ```  
     fields与items的每一条数据的数组对应，如：id="CACC62B0E31811E4BF2CD6B3F2EE5381", 
     pageNo:当前页，pageSize:数据返回条数，startIndex:分页开始数，
@@ -1112,6 +1128,7 @@ MYSTU Profile API
     0:该用户用户名   
     ```
 * 返回：
+    
     ``` 
       {"additionalData":{},
       field:"id,
@@ -1167,6 +1184,7 @@ MYSTU Profile API
     0:该用户用户名   
     ```
 * 返回：
+    
     ``` 
 
       {"additionalData":{},
@@ -1210,7 +1228,7 @@ MYSTU Profile API
       "totalNum":0,
       "totalPage":1
       } 
-
+  ``` 
 
 
 ##27.某用户参加的活动
@@ -1225,6 +1243,7 @@ MYSTU Profile API
     0:该用户用户名   
     ```
 * 返回：
+    
     ``` 
       {fields:"id,
                name,
@@ -1267,7 +1286,7 @@ MYSTU Profile API
          totalNum: 0,
          totalPage: 1
          }  
-
+    ``` 
 
 ##28.某用户创建的活动
 
@@ -1281,6 +1300,7 @@ MYSTU Profile API
     0:该用户用户名   
     ```
 * 返回：
+    
     ``` 
 
       {fields:"id,
