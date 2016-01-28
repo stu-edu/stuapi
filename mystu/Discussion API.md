@@ -848,6 +848,7 @@ MYSTU Discussion API
 * URL:/v3/services/api/post/byEventGroupId/{0}?pageSize=5
 * Method:GET
 * 参数：
+   
     ```                       
      url 路径参数
      0：团体id  String       
