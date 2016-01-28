@@ -1010,6 +1010,7 @@ MYSTU Event API
     0：活动id(String)
      ```
 * 返回：
+    
      ```
        {fields:"id,
                version,
