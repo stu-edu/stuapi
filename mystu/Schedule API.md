@@ -14,6 +14,7 @@ MYSTU Schedule API
     orderStr          排序方式，值可为 category,title,startTime,endTime
     ```
 * 返回：
+    
     ```
     {
       countHeadsStr: "", 
@@ -70,6 +71,7 @@ MYSTU Schedule API
     orderStr          排序方式，值可为 category,title,startTime,endTime
     ```
 * 返回：
+    
     ```
     {
       countHeadsStr: "", 
@@ -125,6 +127,7 @@ MYSTU Schedule API
     orderStr          排序方式，值可为 category,title,startTime,endTime
     ```
 * 返回：
+    
     ```
     {
       countHeadsStr: "", 
@@ -172,6 +175,7 @@ MYSTU Schedule API
 * URL: /services/api/userschedule
 * METHOD: POST
 * 参数：
+    
     ```
     {
         "createTime": 1452848642966,
@@ -195,6 +199,7 @@ MYSTU Schedule API
 * 返回：
     {"success":true}
 * 说明：   
+    
     ```
     {
         "createTime": 创建时间戳,
