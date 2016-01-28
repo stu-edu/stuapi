@@ -848,17 +848,15 @@ MYSTU Discussion API
 * URL:/v3/services/api/post/byEventGroupId/{0}?pageSize=5
 * Method:GET
 * 参数：
-
-```                       
+    ```                       
      url 路径参数
      0：团体id  String       
      url 请求参数
      pageSize 数据返回条数     
     ```
-    
 * 返回：
 
-``` 
+   ``` 
       {fields:"id,
                version,
                owner,
@@ -900,7 +898,8 @@ MYSTU Discussion API
         totalNum: 64,
         totalPage: 4
         }  
-``` 
+
+     ``` 
 
 ##21.我的图书
 
