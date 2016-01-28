@@ -103,6 +103,7 @@ MYSTU Project API
     pageNo 当前页   
     ```
 * 返回：
+   
     ```
       {fields:"id,
               name,
@@ -164,6 +165,7 @@ MYSTU Project API
     pageNo 当前页   
     ```
 * 返回：
+    
     ```
        {fields:"id,
               name,
@@ -226,6 +228,7 @@ MYSTU Project API
     pageNo 当前页   
     ```
 * 返回：
+    
     ```
       {fields:"id,
               name,
@@ -274,7 +277,7 @@ MYSTU Project API
      totalNum: 1,
      totalPage: 1
      }
-
+   ``` 
 
 ##5.团体项目
 
@@ -356,6 +359,7 @@ MYSTU Project API
    ```
      
 * 返回数据说明：
+   
    ```    
     additionalData:返回项目相关数据，admins：管理员，
     groupId：团体id，groupName：团体名称，ename：团体英文名称
@@ -375,6 +379,7 @@ MYSTU Project API
     2:项目结束时间(Long) 
     ```
 * 返回：
+    
     ```   
        {fields:"id,
               name,
@@ -431,7 +436,6 @@ MYSTU Project API
 * 参数：无
 * 返回：
 
-     
     ```
     {
     groupList: [
@@ -508,7 +512,7 @@ MYSTU Project API
 * 返回数据说明：
     ```
     parentId:上层团体id
-
+   ``` 
 
 ##9.搜索团体项目
 
@@ -560,7 +564,7 @@ MYSTU Project API
 * URL:/v3/services/api/project
 * Method:POST
 * 参数：无 
-* 提交数据结构：
+* 提交数据结构：
 
    ```
    {
@@ -603,6 +607,7 @@ MYSTU Project API
       reportType：报名方式(p/个人,g/团体)，
    ```
 * 错误代码：
+  
    ```
     {status_code: 400, error_msg: "name is too long" }，
     {status_code: 400, error_msg: "code is exist" }
@@ -632,7 +637,7 @@ MYSTU Project API
 * 提交数据说明：
    ```
     exists：是否存在该项目编号
-
+   ```
 
 ##12.项目详情
 
@@ -798,6 +803,7 @@ MYSTU Project API
    ```
      
 * 提交数据说明：
+   
    ```
     projectImageSrc:封面图片，shareSpace：分享空间，
     isAddSpace:是否允许成员自己加入分享空间,isDefaultPost:是否显示讨论，
@@ -827,11 +833,13 @@ MYSTU Project API
 
       
 * 提交数据说明：
+   
    ```  
     如需填写表格，则提交填写数据，signType：报名类型（p\个人，g\团体）  
    ```  
 
 * 错误代码：
+    
     ```    
     {status_code: 404, error_msg: project is null" }
     ```  
@@ -847,6 +855,7 @@ MYSTU Project API
       ```
 * 返回：无  
 * 错误代码：
+    
      ```
     {status_code: 404, error_msg: "project is null" }
       ```
@@ -901,7 +910,8 @@ MYSTU Project API
      ```
      
 * 返回数据说明：
-     ```
+   
+    ```
     postList:分享空间帖子，imgs帖子图片，files:photo,相册照片
     ```
 
@@ -988,6 +998,7 @@ MYSTU Project API
    ```
              
 * 返回数据说明：
+   
    ```
     同项目详情返回数据，projectImageSrc:封面图片，files：photo、相册，members：成员，shareSpace：分享空间
    ```
@@ -1002,6 +1013,7 @@ MYSTU Project API
     0：项目id(String)
      ```
 * 返回:
+   
    ```
        {"additionalData":{},field:"{"additionalData":{},
       field:"id,
