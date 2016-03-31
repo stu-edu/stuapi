@@ -819,46 +819,8 @@ MYSTU Profile API
     0:需验证的邮箱
     ```
 
-##20.设置默认邮箱
 
-* URL:/v3/services/api/userProfile/setDefaultEmail
-* Method:POST
-* 参数：无 
-* 提交数据结构：
-    
-    ```
-    {email: "s_stu1@uat.stu.edu.cn "} 
-      ```
-* 错误代码：
-   
-    ```
-    {status_code: 400, error_msg: "email is null" }，
-    {status_code: 400, error_msg: "UserCheckEmail is null" }
-     ```
-
-##21.修改密码
-
-* URL:/v3/services/api/user/changePassword
-* Method:POST
-* 参数：无 
-* 提交数据结构：
-                  
-  ```
-  {
-    id: "948C4870DE8611E29B9900505699201D",
-    username: "s_stu1@uat.stu.edu.cn",
-    oldpassword: "旧的密码",
-    password: "新的密码`"
- }
-  ```
-      
-* 错误代码： 
-  
-  ``` 
-    旧密码不对{"success":false,"errorCode":1}
-  ```
-
-##22.成绩表
+##20.成绩表
 
 * URL:/v3/services/api/coursegrade/query
 * Method:GET
@@ -912,7 +874,7 @@ MYSTU Profile API
     credits：总学分，semesters：学期
     ``` 
 
-##23.个人简历
+##21.个人简历
 
 * URL:/v3/services/api/userProfile/username={0}
 * Method:GET
@@ -1053,7 +1015,7 @@ MYSTU Profile API
  ```
 
 
-##24.某用户的帖子
+##22.某用户的帖子
 
 * URL:/v3/services/api/post/userPost/{0}?pageSize=5
 * Method:GET
@@ -1117,7 +1079,7 @@ MYSTU Profile API
     totalNum:总条数，totalPage:总页数
     ```  
 
-##25.某用户的评论
+##23.某用户的评论
 
 * URL:/v3/services/api/post/userReplay/{0}?pageSize=5
 * Method:GET
@@ -1173,7 +1135,7 @@ MYSTU Profile API
       }  
     ``` 
 
-##26.某用户的收藏
+##24.某用户的收藏
 
 * URL:/v3/services/api/post/userFollowing/{0}?pageSize=5
 * Method:GET
@@ -1231,7 +1193,7 @@ MYSTU Profile API
   ``` 
 
 
-##27.某用户参加的活动
+##25.某用户参加的活动
 
 * URL:/v3/services/api/event/userEvents/{0}?pageSize=9&pageNo=1
 * Method:GET
@@ -1288,7 +1250,7 @@ MYSTU Profile API
          }  
     ``` 
 
-##28.某用户创建的活动
+##26.某用户创建的活动
 
 * URL：/v3/services/api/event/userCreatedevents/{0}?pageSize=8&pageNo=1
 * Method:GET
