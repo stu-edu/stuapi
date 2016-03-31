@@ -1,5 +1,4 @@
 MYSTU IRS API
-
 ================================
 ##说明
 * 如未特别说明，返回数据的content-type均为application/json
